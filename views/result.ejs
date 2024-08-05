@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Result</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="search-bar">
+                <input type="text" value="<%= city || 'Mumbai' %>" readonly>
+            </div>
+            <div class="main-info">
+                <div class="weather-icon">
+                    <img src="http://openweathermap.org/img/wn/<%= icon || '50d' %>@2x.png" alt="Weather Icon">
+                </div>
+                <div class="temperature">
+                    <h1><%= temperature || 28.99 %>°C</h1>
+                    <p><%= weatherDescription || 'mist' %></p>
+                    <hr>
+                    <p><%= date || new Date().toLocaleDateString() %></p>
+                    <p><%= time || new Date().toLocaleTimeString() %></p>
+                </div>
+            </div>
+            <div class="location">
+                <h2><%= city || 'Mumbai' %></h2>
+            </div>
+            <a href="/">Go back</a>
+        </div>
+        <div class="right-panel">
+            <div class="info-box">
+                <h3>Wind</h3>
+                <p><%= windSpeed || 3.09 %> m/s</p>
+            </div>
+            <div class="info-box">
+                <h3>Humidity</h3>
+                <p><%= humidity || 89 %>%</p>
+            </div>
+            <div class="info-box">
+                <h3>Pressure</h3>
+                <p><%= pressure || 1001 %> hPa</p>
+            </div>
+            <div class="info-box">
+                <h3>Cloudiness</h3>
+                <p><%= cloudiness || 75 %>%</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

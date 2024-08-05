@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background-image: url('https://img.freepik.com/free-photo/sunset-majestic-coastal-cliff-waves-breaking-generative-ai_188544-12582.jpg?t=st=1719091043~exp=1719094643~hmac=e27c4ffd4c5a9853a2106a32b8140eb6771e0c6f07cbd132ccc82a5a2f69f7b0&w=1060'); */
+    /* background-image: url('https://www.freepik.com/free-photo/nature-beauty-waters-edge-tranquil-waves-generative-ai_40964058.htm#query=sea%20wallpaper&position=1&from_view=keyword&track=ais_user&uuid=57051fdb-9d9c-4906-b0cf-d555218e0854'); */
+    background-image: url('https://img.freepik.com/free-photo/nature-beauty-waters-edge-tranquil-waves-generative-ai_188544-8979.jpg?w=1060&t=st=1719095078~exp=1719095678~hmac=171f6d75894de06ce72aa343d2d8b31bd74a03284184fa691bf011fe592d3be6');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.6); /* White background with 80% opacity */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 80%;
+    max-width: 900px;
+    display: flex;
+}
+
+.left-panel {
+    width: 40%;
+    padding: 20px;
+    background-color: rgba(248, 248, 248, 0.6); /* Adjust opacity for the panel */
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgba(227, 227, 227, 0.6); /* Adjust opacity for the search bar */
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.weather-icon img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.temperature {
+    text-align: center;
+}
+
+.temperature h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.temperature p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.temperature hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+    width: 80%;
+}
+
+.location {
+    text-align: center;
+    background-color: rgba(227, 227, 227, 0.6); /* Adjust opacity for the location panel */
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+.location h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.right-panel {
+    width: 60%;
+    padding: 20px;
+    background-color: rgba(240, 240, 240, 0.6); /* Adjust opacity for the right panel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-box {
+    background: rgba(106, 154, 226, 0.6); /* Adjust opacity for the info boxes */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    width: 80%;
+    text-align: center;
+    color: #fff;
+}
+
+.info-box h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.info-box p {
+    margin: 5px 0 0;
+    font-size: 18px;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin: 20px;
+    color: #28a745;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.card1{
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: transparent;
+  color: wheat;
+}
+
+.nishButton{
+  background-color: green;
+  font-family: 'times new roman', cursive;
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.nishButton:hover{
+  background-color: grey;
+  color: #ffe989;
+}
+
+.card{
+    background-color: rgba(240, 240, 240, 0.6); /* Adjust opacity for the right panel */
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+}
+
+h5{
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+}
