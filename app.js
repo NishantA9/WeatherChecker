@@ -25,7 +25,7 @@ app.post('/weather', async (req, res) => {
     try {
         const response = await axios.get(url);
         const data = response.data;
-        
+
         const weatherData = {
             city: data.name,
             temperature: data.main.temp,
@@ -42,9 +42,21 @@ app.post('/weather', async (req, res) => {
         res.render('result', weatherData);
     } catch (error) {
         console.error(error);
-        res.render('result', { city, willRain: null });
+        res.render('result', {
+            city: city || 'Unknown city',
+            temperature: 28.99,  // Default temperature
+            weatherDescription: 'Data unavailable',  // Default description
+            icon: '50d',  // Default icon
+            windSpeed: 0,
+            humidity: 0,
+            pressure: 0,
+            cloudiness: 0,
+            date: new Date().toLocaleDateString(),
+            time: new Date().toLocaleTimeString()
+        });
     }
 });
+
 
 app.get('/mock-weather', (req, res) => {
     const mockWeatherData = {
